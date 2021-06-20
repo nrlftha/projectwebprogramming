@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>DSL</title>
+
+  </head>
+  <body>
+      <center>
+          <form action="login.php" method="post">
+              <h3>Login</h3>
+
+  <div class="container">
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required><br><br>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required><br><br>
+
+    <button type="submit">Login</button>
+
+</form>
+
+<p>-----------------------------------------------------------------------------------------------------------</p>
+     <h3>Name System : Data Store Library(DSL)</h3>
+
+     <h3>Pengguna</h3>
+   <p><a href="admin/">Admin(irdina)</a></p>
+       <p> - menguruskan senarai buku</p>
+       <p> - menyemak senarai buku yang dipinjam</p>
+
+<p><a href="staff/">Staff(fatihah)</a><p></p>
+       <p> - menguruskan senarai student</p>
+       <p> - menyemak senarai buku yang dipinjam</p>
+
+<p><a href="student/">Student(atiqah)</a></p>
+       <p> - menguruskan senarai pinjaman</p>
+       
+       <p>---------------------------------------------------------------------------------------------------------</p>
+       
+       <h5>Database DSL</h5>
+       <p>Book(idBook, Title, typeBook)</p>
+       <p>Booking(idBooking, idstudent, idBook, bookingdate, returndate)</p>
+       <p>Student(idStudent, username, password, fullname, age, icnum, email, class, phonenum)</p>
+       <p>Admin(password)</p>
+       <p>Staff(password)</p>
+       
+       <p>------------------------------------------------------------------------------------------------------</p>
+       
+       
+        <table border="1" cellpadding="8">
+    
+        <h2>TABLE: BOOK</h2>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Extra</th>
+        </tr>
+        <tr>
+          <td>idBook</td>
+          <td>int(5)</td>
+          <td>PK</td>
+        </tr>
+        <tr>
+          <td>Title</td>
+          <td>varchar(30)</td>
+          <td></td>
+        </tr>
+        <tr>
+            <td>typeBook</td>
+            <td>varchar(20)</td>
+            <td></td>
+        </tr>
+        </table>
+        
+        
+        <table border="1" cellpadding="8">
+    
+        <h2>TABLE: BOOKING</h2>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Extra</th>
+        </tr>
+        <tr>
+          <td>idBooking</td>
+          <td>int(5)</td>
+          <td>PK</td>
+        </tr>
+        <tr>
+          <td>idStudent</td>
+          <td>int(5)</td>
+          <td>FK</td>
+        </tr>
+        <tr>
+            <td>idBook</td>
+            <td>int(5)</td>
+            <td>FK</td>
+        </tr>
+        <tr>
+            <td>returndate</td>
+            <td>date</td>
+            <td></td>
+        </tr>
+        </table>
+        
+        
+        <table border="1" cellpadding="8">
+    
+        <h2>TABLE: STUDENT</h2>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Extra</th>
+        </tr>
+        <tr>
+          <td>idStudent</td>
+          <td>int(5)</td>
+          <td>PK</td>
+        </tr>
+        <tr>
+            <td>username</td>
+            <td>varchar(10)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td>varchar(10)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>fullname</td>
+            <td>text</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>age</td>
+            <td>int(5)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>icnum</td>
+            <td>varchar(15)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>varchar(30)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>class</td>
+            <td>varchar(5)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>phonenum</td>
+            <td>varchar(15)</td>
+            <td></td>
+        </tr>
+        </table>
+        
+        
+        <table border="1" cellpadding="8">
+    
+        <h2>TABLE: ADMIN</h2>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Extra</th>
+        </tr>
+        <tr>
+          <td>password</td>
+          <td>varchar(10)</td>
+          <td></td>
+        </tr>
+        </table>
+        
+        
+        <table border="1" cellpadding="8">
+    
+        <h2>TABLE: STAFF</h2>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Extra</th>
+        </tr>
+        <tr>
+          <td>password</td>
+          <td>varchar(10)</td>
+          <td></td>
+        </tr>
+        </table>
+        </center>
+  
+  </body>
+</html>
