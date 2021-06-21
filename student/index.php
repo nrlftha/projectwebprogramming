@@ -43,12 +43,13 @@
     <center>
         <div class="topnav">
             <a class="active" href="index.php?menu=#home">Home</a>
-            <a href="daftar.php">Daftar Buku</a>
+            <a href="senarai.php">Senarai Pinjaman</a>
+            <a href="daftar.php">Daftar Pinjaman</a>
             <a href="../logout.php">Logout</a>
         </div>
 
         <h3>Name System : Data Store Library(DSL)</h3><br>
-        <br>Nama Programmer :<a href="student/">Student()</a>
+        <br>Nama Programmer :<a href="student/">Student(Atiqah)</a>
     </center>
     
 </body>
